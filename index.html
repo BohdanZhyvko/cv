@@ -17,15 +17,56 @@
    ================================================== -->
     <header>
         <nav class="main-nav-wrap">
-            <ul class="main-navigation">
-                <li><a href="#home" title="">Home</a></li>
-                <li><a href="#about-me" title="">About me</a></li>
-                <li><a href="#resume" title="">Resume</a></li>
-                <li><a href="#contact" title="">Contact</a></li>
+            <ul class="main-navigation" type="none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>    
     </header> 
     <!-- /header -->
+    
+    <!-- article 
+   ================================================== -->
+   <!-- Home -->
+   <article id="home">
+       
+       <h2>Hi, I am</h2>
+       <h1>Bohdan Zhyvko</h1>
+       <h2>I am a Junior Web Developer</h2>
+        
+        <!-- About me -->
+        <section id="about-me">
+            
+        </section>
+        
+        <!-- Resume -->
+        <section id="resume"></section>
+        
+        <!-- Contact -->
+        <section id="contact">
+            <form>
+                <label><p>Email*</p>
+                    <input type="text" name="contact-email" placeholder="Enter email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required></label>
+            
+                <br>
+                <label><p>Name*</p>
+                    <input type="text" name="contact-name" placeholder="Enter name" required></label>
+            
+                <br>
+                <label><p>Message*</p>
+                    <textarea name="contact-message" cols="3" rows="5" placeholder="Enter your message…" required></textarea></label>
+            
+                <br><br>
+                <input type="submit" value="Send"/>
+            </form>
+        </section>
+       
+   </article>
+   <!-- article -->
+    
     
     <!-- footer 
    ================================================== -->
