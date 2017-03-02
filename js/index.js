@@ -1,3 +1,9 @@
+
+
+
+
+
+//google Map Lviv
 function myMap() {
     var mapProp= {
         center:new google.maps.LatLng(49.8432204,24.0259262),
