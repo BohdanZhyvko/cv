@@ -1,7 +1,12 @@
-
-
-
-
+//contact information hiden in html
+var contactEmail = document.getElementById('contact-email-write');
+contactEmail.innerHTML = ['com','.','gmail','@','zhyvko','.',
+                            'bohdan'].reverse().join('');
+var contactPhoneNumber = document.getElementById('contact-phone-write');
+contactPhoneNumber.innerHTML = ['9','3','4','2','-',,'8','5','1','-','3','6','0',
+                            '-','8','3','+'].reverse().join('');
+var contactSkype = document.getElementById('contact-skype-write');
+contactSkype.innerHTML = ['zhyvko','.','bohdan'].reverse().join('');
 
 //google Map Lviv
 function myMap() {
