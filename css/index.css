@@ -1,1 +1,52 @@
+ body{
+     max-width: 1366px;
+     min-width: 400px;
+     margin: 0 auto;
+ }
  
+header{
+    height: 25px;
+    background-color: green;
+}
+
+nav{
+    height: 25px;
+    background-color: yellow;
+}
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style-position: inside;
+	font: 14px 'Oswald', sans-serif;
+	padding: 10px;
+}
+
+.main-navigation li {
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 0;
+}
+
+.main-navigation a {
+	color: black;
+}
+
+article{
+    height: auto;
+    background-color: blue;
+}
+#background-img{
+    background-size: auto;
+    margin: 0 auto;
+}
+footer{
+    height: 150px;
+    background-color: red;
+}
