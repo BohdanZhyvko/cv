@@ -5,47 +5,89 @@
  }
  
 header{
-    height: 25px;
-    background-color: green;
+    height: 50px;
+    text-align: center;
 }
 
-nav{
-    height: 25px;
-    background-color: yellow;
+/* navigation bar */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: inherit;
+}
+nav li {
+  display: inline-block;
+  margin-left: 25px;
+  height: 50px;
+  line-height: 50px;
+  transition: .5s linear;
 }
 nav a {
-	text-decoration: none;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #868686;
+  text-transform: uppercase;
+}
+nav a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: #868686;
+  transition: width .5s linear;  
+}
+nav a:hover:after {width: 100%;}
+
+@media screen and (max-width: 660px) {
+  ul {float: none;}
+  nav li:first-of-type {margin-left: 0;}
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
-}
-
+@media screen and (max-width: 400px) {
+nav {overflow: visible;}
 nav li {
-	list-style-position: inside;
-	font: 14px 'Oswald', sans-serif;
-	padding: 10px;
+  display: block;
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+}
+nav li:hover {background: rgba(0,0,0,.1);}
+nav a:after {content: none;}
 }
 
-.main-navigation li {
-	display: inline-block;
-	padding: 10px 30px;
-	margin: 0;
-}
-
-.main-navigation a {
-	color: black;
-}
 
 article{
     height: auto;
-    background-color: blue;
-}
-#background-img{
-    background-size: auto;
+    background-image: url(/image/jpg/title.home.lviv.jpg);
+    background-repeat: no-repeat;
     margin: 0 auto;
 }
+
+/* Home page */
+#home-information{
+    height: 768px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+#home-information h1 {
+    font-size: 76px ;
+    margin: 0;
+}
+h4 {
+    font-size: x-large ;
+    margin: 10px;
+}
+
 footer{
     height: 150px;
     background-color: red;

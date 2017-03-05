@@ -31,12 +31,11 @@
    <!-- article -->
    <!-- Home -->
    <article class="home">
-       
-       <img id="background-img" src="image/jpg/title.home.lviv.jpg" alt="Fon image for home pag." >
-       <h4>Hi, I am</h4>
-       <h1>Bohdan Zhyvko</h1>
-       <h4>I am a Junior Web Developer.</h4>
-        
+        <div id="home-information">
+            <h4>Hi, I am</h4>
+            <h1>Bohdan Zhyvko</h1>
+            <h4>I am a Junior Web Developer.</h4>
+        </div>
         <!-- About me -->
         <section id="about-me">
             <h2>about me</h2>
@@ -156,7 +155,7 @@
             </div>
             
             <!-- form send massege -->
-            <form id ="form-send-massege" method="POST">
+            <form id ="form-send-massege" class="form" method="POST">
                 <label>Email* <br>
                     <input type="text" name="contact-email" placeholder="Enter email"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required></label>
@@ -171,7 +170,7 @@
                         required></textarea></label>
             
                 <br><br>
-                <input type="submit" value="Send" onclick="doSubmit();"/>
+                <input type="submit" value="Send">
             </form>
         </section>
        
