@@ -67,7 +67,7 @@ nav a:hover:after {
 /* Home page */
 article {
     height: auto;
-    background-image: url(/image/jpg/background_home.jpg);
+    background-image: url(/image/jpg/background-home.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
 }
