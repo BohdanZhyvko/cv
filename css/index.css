@@ -42,27 +42,16 @@ nav a:after {
 }
 nav a:hover:after {width: 100%;}
 
-@media screen and (max-width: 660px) {
-  ul {float: none;}
-  nav li:first-of-type {margin-left: 0;}
+#top_nav{
+   position: fixed;
+   background: rgba(200,200,200,0.6);
+   width: 1366px;
+   height:50px;
 }
-
-@media screen and (max-width: 400px) {
-nav {overflow: visible;}
-nav li {
-  display: block;
-  margin: 0;
-  height: 40px;
-  line-height: 40px;
-}
-nav li:hover {background: rgba(0,0,0,.1);}
-nav a:after {content: none;}
-}
-
 
 article{
     height: auto;
-    background-image: url(/image/jpg/title.home.lviv.jpg);
+    background-image: url(/image/jpg/background.home.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -79,13 +68,29 @@ article{
     color: white;
     font-weight: bold;
 }
+#home-information div{
+    margin: 200px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #home-information h1 {
     font-size: 76px ;
-    margin: 0;
+    margin: 0 auto;
 }
 h4 {
     font-size: x-large ;
-    margin: 10px;
+    margin: 10px auto;
+}
+@media screen and (max-width: 400px) {
+#home-information div { margin-left: 10px }
+#home-information h1 { 
+    font-size: xx-large;
+}
+#home-information h4 { 
+    font-size: large;
+}
 }
 
 footer{

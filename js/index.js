@@ -18,8 +18,6 @@ function sendMassege(){
     formAction.action = 'https://formspree.io/' + arrEmail.join('');
 }
 
-
-
 //google Map
 function myMap() {
     var mapProp= {
