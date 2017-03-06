@@ -49,14 +49,14 @@ nav a:hover:after {width: 100%;}
    height:50px;
 }
 
+/* Home page */
 article{
     height: auto;
-    background-image: url(/image/jpg/background.home.jpg);
+    background-image: url(/images/jpg/background.home.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 
-/* Home page */
 #home-information{
     height: 768px;
     margin: 0;
