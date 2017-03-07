@@ -29,7 +29,7 @@ nav a {
     text-decoration: none;
     display: block;
     position: relative;
-    color: #868686;
+    color: #363636;
     text-transform: uppercase;
 }
 
@@ -40,35 +40,19 @@ nav a:after {
     position: absolute;
     left: 0;
     bottom: 15px;
-    background: #868686;
+    background: #363636;
     transition: width .5s linear;
 }
 
 nav a:hover:after {
     width: 100%;
 }
-@media screen and (max-width: 1366px) {
-    #top_nav{
-        height: 50px;
-        width: 100%;
-        position: fixed;
-        background: rgba(200,200,200,0.6);
-    }
-}
-@media screen and (min-width: 1366px) {
-    #top_nav ul {
-        height: 50px;
-        width: 1366px;
-        position: fixed;
-        background: rgba(200,200,200,0.6);
-    }
-}
 
 
 /* Home page */
 article {
     height: auto;
-    background-image: url(/image/jpg/background-home.jpg);
+    background-image: url(/cv/image/jpg/background-home.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -96,6 +80,7 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #home-information h1 {
@@ -103,26 +88,84 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
     margin: 0 auto;
 }
 
-h4 {
+#home-information h4 {
     font-size: x-large ;
     margin: 10px auto;
 }
 
-@media screen and (max-width: 710px) {
+/* all title pages */
+.title-page{
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* about me page */
+#about-me {
+    text-align: center;
+}
+#about-me .container{
+    background-color: #00BFFF;
+}
 
-    #home-information h1 {
-        font-size: 55px;
-    }
+#resume .container{
+    background-color:  #00B2EE;
+}
 
-    #home-information h4 {
-        font-size: large;
+#contact-me .container{
+    background-color: #009ACD;
+}
+
+/* resume page */
+.resume section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.resume #resume-education{
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.resume #work-experience{
+    width: 60%;
+}
+.resume #resume-experience{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1366px) {
+    #top_nav{
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        background: rgba(200,200,200,0.6);
     }
 }
-@media screen and (max-width: 530px) {
-
-    #home-information h1 {
-        font-size: 35px;
+@media screen and (min-width: 1366px) {
+    #top_nav ul {
+        height: 50px;
+        width: 1366px;
+        position: fixed;
+        background: rgba(200,200,200,0.6);
     }
+}
+
+@media screen and (max-width: 710px) {
+
+
+}
+@media screen and (max-width: 530px) {
 
 }
 footer {
