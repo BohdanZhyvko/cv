@@ -19,9 +19,11 @@ nav li {
     display: inline-block;
     height: 50px;
     line-height: 50px;
+    transition: width .5s linear;
 }
 
 nav a {
+    margin: auto 10px;
     text-decoration: none;
     display: block;
     position: relative;
@@ -48,15 +50,12 @@ nav a:hover:after {
 /* Home page */
 article {
     height: auto;
-    background-image: url(/cv/image/jpg/background-home.jpg);
+    background-image: url(/image/jpg/background-home.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 
-article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 
 #home-information {
     height: 768px;
@@ -104,12 +103,11 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
 #about-me {
     text-align: center;
 }
+#about-me p{
+    margin: 15px 5%;
+}
 #about-me .container{
     background-color: #00BFFF;
-}
-
-#resume .container{
-    background-color: #00B2EE;
 }
 
 #contact-me .container{
@@ -117,6 +115,9 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
 }
 
 /* resume page */
+#resume .container{
+    background-color: #00B2EE;
+}
 .resume section {
     display: flex;
     flex-direction: column;
@@ -124,32 +125,26 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
     align-items: center;
 
 }
+.left { left: 0; top: 0; width: 50%; text-align: right; margin-right: 2%; }
+.right { right: 0; top: 0; width: 50%; text-align: left; margin-left: 2%; } 
 
 .resume #resume-education{
-
+    margin-top: 1%;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: flex-start;
 }
+
 .resume #resume-experience{
-
+    margin-top: 1%;
+    margin-bottom: 25px;
     flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: flex-start;
 
 }
-#resume-experience ul {
-    text-align: right;
-}
 
-#resume .content{
-    padding-right: 100px;
-    padding-left: 100px;
-
-}
 
 .table-content{
-    margin-left: 7%;
+    margin: auto 5%;
 }
 .resume li h4{
     margin-bottom: 5px;
@@ -173,7 +168,13 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
         background: rgba(200,200,200,0.6);
     }
 }
-
+@media screen and (max-width: 777px) {
+    
+h2.left { width: 35%; }
+h2.right { width: 35%; } 
+ul.left { width: 75%; }
+ul.right  {width: 75%; } 
+}
 
 @media screen and (max-width: 555px) {
 .resume section {
@@ -206,6 +207,9 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
 .resume #resume-experience li{
     text-align: center;
 }
+
+.left { width: 100%; text-align: center;}
+.right { width: 100%; text-align: center;} 
 
 }
 footer {
