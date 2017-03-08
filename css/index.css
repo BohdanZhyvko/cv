@@ -14,15 +14,11 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    float: inherit;
 }
-
 nav li {
     display: inline-block;
-
     height: 50px;
     line-height: 50px;
-    transition: .5s linear;
 }
 
 nav a {
@@ -113,7 +109,7 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
 }
 
 #resume .container{
-    background-color:  #00B2EE;
+    background-color: #00B2EE;
 }
 
 #contact-me .container{
@@ -130,19 +126,36 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
 }
 
 .resume #resume-education{
-    
+
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.resume #work-experience{
-    width: 60%;
-}
 .resume #resume-experience{
-    flex-direction: row;
+
+    flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: flex-start;
+
 }
+#resume-experience ul {
+    text-align: right;
+}
+
+#resume .content{
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+.table-content{
+    margin-left: 7%;
+}
+.resume li h4{
+    margin-bottom: 5px;
+}
+
+
 
 @media screen and (max-width: 1366px) {
     #top_nav{
@@ -161,11 +174,38 @@ article #resume-skill-list,form, h1, h2, h3, h4, h5, li, p {
     }
 }
 
-@media screen and (max-width: 710px) {
 
+@media screen and (max-width: 555px) {
+.resume section {
+    text-align: center;
+    
+}
+#resume .content{
+    padding-right: 10px;
+    padding-left: 10px;
 
 }
-@media screen and (max-width: 530px) {
+#resume-experience ul {
+    text-align: center;
+}
+
+.resume h2 {
+    margin-bottom: 0;
+}
+.resume #resume-education{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume #resume-experience{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume #resume-experience li{
+    text-align: center;
+}
 
 }
 footer {
