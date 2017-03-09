@@ -183,25 +183,31 @@
         </div>
         <!-- form send massege -->
         <div id="my-contact-form">
-            <h3>Ask me.</h3>
+            <h3>Contact me</h3>
             <form id="form-send-massege" class="form" method="POST">
                 <label>
                     Email* <br>
-                    <input type="text" name="contact-email" placeholder="Enter email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
+                    <input type="text" name="contact-email" 
+                        placeholder="Enter email" 
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
+                    <span class="form_hint">Proper format 
+                        "name@something.com"</span>
                 </label>
                 <br>
                 <label>
-                    Name* <br>
-                    <input type="text" name="contact-name" placeholder="Enter name" required>
+                    Full Name* <br>
+                    <input type="text" name="contact-name" 
+                        placeholder="Enter name" required>
                 </label>
                 <br>
                 <label>
                     Message* <br>
-                    <textarea name="contact-message" cols="22" rows="5" placeholder="Enter your message…" required></textarea>
+                    <textarea name="contact-message" cols="40" rows="6"
+                        placeholder="Enter your message…" required></textarea>
                 </label>
                 <br>
                 <br>
-                <input type="submit" value="Send">
+                <input class="submit" type="submit" value="Send">
             </form>
         </div>
     </div>
@@ -235,5 +241,4 @@
 <!-- /footer -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.js" integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA02tkwyI9RaNy4hF8vpC_tzJ8_DYlN4gU&callback=myMap"></script>
 </body></html>

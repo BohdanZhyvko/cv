@@ -162,14 +162,99 @@ article {
 .resume li h4 {
     margin-bottom: 5px;
 }
+
 /* contact page */
 #content-contact-information {
     margin: 15px 5%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
+#my-contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#my-contact-info li{
+    margin: auto 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* form style */
+
+#form-send-massege :focus {
+    outline: none;
+}
+.form {
+    width: 100%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+.form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+.form label input{
+    height:20px;
+    width: 350px;
+    padding:5px 8px;
+}
+.form label textarea {
+    padding:8px; 
+    width:350px;
+}
+
+.form label input, .form textarea {
+    border:1px solid #aaa;
+    border-radius:2px;
+}
+.form label input:focus, .form textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+
+.form label input:focus:invalid, .form textarea:focus:invalid { /* when a field is considered invalid by the browser */
+    background: #fff url(/image/png/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+.form input:required:valid, .form textarea:required:valid { /* when a field is considered valid by the browser */
+    background: #fff url(/image/png/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+.form_hint {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left:8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+
+.form_hint::before { 
+    color:#d45252; 
+    position: absolute; 
+    top:1px; 
+    left:-6px; 
+}
+
+.form label input:focus + .form_hint {display: inline;}
+.form label input:required:valid + .form_hint {background: #28921f;} /* change form hint color when valid */
+.form label input:required:valid + .form_hint::before {color:#28921f;} /* change form hint arrow color when valid */
 
 @media screen and (max-width: 1366px) {
     #top_nav {
