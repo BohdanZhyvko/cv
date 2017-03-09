@@ -185,29 +185,33 @@
         <div id="my-contact-form">
             <h3>Contact me</h3>
             <form id="form-send-massege" class="form" method="POST">
-                <label>
-                    Email* <br>
-                    <input type="text" name="contact-email" 
-                        placeholder="Enter email" 
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
-                    <span class="form_hint">Proper format 
-                        "name@something.com"</span>
-                </label>
+                <div id="form-input-block">
+                    <div id="email-name-block">
+                        <label class="email">
+                            Email* <br>
+                            <input type="email" name="contact-email" 
+                                placeholder="Enter email" 
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
+                            <span class="form_hint">Proper format 
+                                "name@something.com"</span>
+                        </label>
+                        <br>
+                        <label>
+                            Full Name* <br>
+                            <input type="text" name="contact-name" 
+                                placeholder="Enter name" required>
+                        </label>
+                    </div>
+                    <br>
+                    <label class="textarea" >
+                        Message* <br>
+                        <textarea name="contact-message" cols="40" rows="6"
+                            placeholder="Enter your message…" required></textarea>
+                    </label>
+                </div>
                 <br>
-                <label>
-                    Full Name* <br>
-                    <input type="text" name="contact-name" 
-                        placeholder="Enter name" required>
-                </label>
                 <br>
-                <label>
-                    Message* <br>
-                    <textarea name="contact-message" cols="40" rows="6"
-                        placeholder="Enter your message…" required></textarea>
-                </label>
-                <br>
-                <br>
-                <input class="submit" type="submit" value="Send">
+                <button class="submit" type="submit" value="Send">Send Message</button> 
             </form>
         </div>
     </div>
