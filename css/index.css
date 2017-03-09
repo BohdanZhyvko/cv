@@ -162,6 +162,14 @@ article {
 .resume li h4 {
     margin-bottom: 5px;
 }
+/* contact page */
+#content-contact-information {
+    margin: 15px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 @media screen and (max-width: 1366px) {
     #top_nav {
@@ -182,6 +190,10 @@ article {
 }
 
 @media screen and (max-width: 777px) {
+    
+    #home-information div {
+        margin: 100px auto 0 auto;
+    }
 
     h2.left {
         width: 35%;
@@ -201,6 +213,10 @@ article {
 }
 
 @media screen and (max-width: 555px) {
+    
+    #home-information div {
+        margin: 0 auto;
+    }
     
     nav a {
         margin: auto 5px;
