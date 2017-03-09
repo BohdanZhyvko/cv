@@ -1,6 +1,5 @@
 body {
     max-width: 1366px;
-    min-width: 400px;
     margin: 0 auto;
 }
 
@@ -183,6 +182,7 @@ article {
 }
 
 @media screen and (max-width: 777px) {
+
     h2.left {
         width: 35%;
     }
@@ -201,6 +201,11 @@ article {
 }
 
 @media screen and (max-width: 555px) {
+    
+    nav a {
+        margin: auto 5px;
+    }
+
     .resume section {
         text-align: center;
     }
