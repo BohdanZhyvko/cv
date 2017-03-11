@@ -247,13 +247,13 @@ article {
 }
 
 .form label input:focus:invalid, .form textarea:focus:invalid { /* when a field is considered invalid by the browser */
-    background: #fff url(/image/png/invalid.png) no-repeat 98% center;
+    background: #fff url(/cv/image/png/invalid.png) no-repeat 98% center;
     box-shadow: 0 0 5px #d45252;
     border-color: #b03535
 }
 
 .form input:required:valid, .form textarea:required:valid { /* when a field is considered valid by the browser */
-    background: #fff url(/image/png/valid.png) no-repeat 98% center;
+    background: #fff url(/cv/image/png/valid.png) no-repeat 98% center;
     box-shadow: 0 0 5px #5cd053;
     border-color: #28921f;
 }
