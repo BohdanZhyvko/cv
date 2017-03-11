@@ -228,12 +228,12 @@ article {
 }
 .form label input{
     height:30px;
-    width: 90%;
+    width: 100%;
     padding:5px 8px;
 }
 .form label textarea {
     padding:8px; 
-    width:90%;
+    width:100%;
 }
 
 .form label input, .form textarea {
@@ -334,6 +334,13 @@ article {
   .submit:active{
     opacity: 0.9;
   }
+  
+  .form label{
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+      flex-wrap: wrap;
+  }
 
 @media screen and (max-width: 1366px) {
     #top_nav {
@@ -376,10 +383,19 @@ article {
     }
     #my-contact-info ul {
 	    display: flex;
-	    flex-wrap: wrap;
+	    flex-wrap: wrap-reverse;
     }
     #my-contact-info ul li {
 	    flex: 1 0 25%;
+    }
+    
+    #form-input-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form .textarea {
+        margin: 0 auto;
+        padding-right: 14px;
     }
     
 }
@@ -455,6 +471,13 @@ article {
         width: 100%;
         text-align: center;
         margin: 0 auto;
+    }
+    #my-contact-form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 }
 

@@ -187,7 +187,7 @@
             <form id="form-send-massege" class="form" method="POST">
                 <div id="form-input-block">
                     <div id="email-name-block">
-                        <label class="email">
+                        <label id="email">
                             Email* <br>
                             <input type="email" name="contact-email" 
                                 placeholder="Enter email" 
@@ -195,21 +195,19 @@
                             <span class="form_hint">Proper format 
                                 "name@something.com"</span>
                         </label>
-                        <br>
-                        <label>
+
+                        <label id="name">
                             Full Name* <br>
                             <input type="text" name="contact-name" 
                                 placeholder="Enter name" required>
                         </label>
-                    </div>
-                    <br>
+                     </div> 
                     <label class="textarea" >
                         Message* <br>
                         <textarea name="contact-message" cols="40" rows="6"
                             placeholder="Enter your message…" required></textarea>
                     </label>
                 </div>
-                <br>
                 <br>
                 <button class="submit" type="submit" value="Send">Send Message</button> 
             </form>
