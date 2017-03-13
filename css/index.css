@@ -373,6 +373,7 @@ article {
   footer a{
       margin: 10px auto;
       text-decoration: none;
+      text-align: center;
   }
   
   footer h3, h5{
@@ -540,7 +541,6 @@ article {
     #my-contact-info ul {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
     }
 
 }
