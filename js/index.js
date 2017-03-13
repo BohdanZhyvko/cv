@@ -19,3 +19,8 @@ formAction.addEventListener('submit', function() {
 function sendMassege() {
     formAction.action = 'https://formspree.io/' + arrEmail.join('');
 }
+
+document.getElementById('resumeBtn').addEventListener("click", goToResume);
+function goToResume(){
+     window.open('https://docs.google.com/document/d/1b9U7ghfoke4KV_ao7ZuAgHq6zMJaKPFAFBZ_3gXWEug/edit', '_blank');
+}
