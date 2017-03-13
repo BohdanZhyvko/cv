@@ -12,7 +12,7 @@ $(function() {
                     var max = 0; 
                     max = $(this).val();
                     $(this).val(0).animate({ value: max }, 
-                    { duration: 2000});
+                    { duration: 1000});
         	    });
         	    i =10;
             }
